@@ -1,2 +1,106 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #2B2B2B;
+        }
+
+        .content_home{
+            color: white;
+            padding: 50px 80px;
+            font-size: larger;
+        }
+
+        .content_home span{
+            font-family: 'Times New Roman', Times, serif;
+            color: orangered;
+        }
+
+        .content_about {
+            color: white;
+            font-size: larger;
+            margin-left: 500px;
+        }
+
+        .content_contact{
+            color: white;
+            padding: 100px 80px;
+            font-size: larger;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        li{
+            padding-top: 5px;
+        }
+
+        .content_contact ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 750px;
+        }
+
+        .content_contact li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content_contact i{
+            font-size: 30px;
+        }
+
+        .content_contact li:hover{
+            font-size: x-large;
+        }
+        .content_contact span:hover{
+            color: orangered;
+        }
+        .content_about  span:hover{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="content_home">
+            <h1>Hello my name is <span>Anushka Rajapaksha</span></h1>
+            <h1>I'm a <span>undergraduate.</span></h1>
+            <p>I'm a undergraduate at University of Colombo School of Computing.</p>
+        </div>
+        <div class="content_about" id="about">
+            <div class="title"><h1>About me</h1></div>
+            <h2>I'm Anushka Rajapaksha and Undergraduate</h2>
+            <ul>
+                <li>Name : <span>Anushka Dushmantha Rajapaksha</span></li>
+                <li>Age : <span>22</span></li>
+                <li>Degree : <span>Information Systems</span></li>
+                <li>University : <span>University of Colombo</span></li>
+                <li>School : <span>St Mary's College, Kegalle</span></li>
+            </ul>
+        </div>
+        <div class="content_contact" id="contact">
+            <h1 class="title">Contact Me</h1>
+            <h2>Have You Any Questions?</h2>
+            <ul>
+                <li><i class="fa fa-phone"></i>Call me on<span>0769320933</span></li>
+                <li><i class="fa-solid fa-envelope"></i>Email<span>anushkarajapaksha9@gmail.com</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
