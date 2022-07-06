@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RaveFX Portfolio</title>
+<link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class = "navbar">
+
+<div class="navitems">
+<a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+</div>
+
+<div class="navlogo">
+<a href="index.html"><img src="weblogo.png" alt=""></a>
+</div>
+
+</div>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="hero2.png" style="width:100%">
+      <div class="text">Wedding Photography</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="hero3.png" style="width:100%">
+      <div class="text">Event Photography</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="hero.png" style="width:100%">
+      <div class="text">Functions</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">Prev</a>
+    <a class="next" onclick="plusSlides(1)">Next</a>
+    
+</div>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+<br>
+<div class="content">
+<h1>Who we are... </h1>
+<p> We are a group of professional and enthusiastic photographers, </p>
+<p>dedicated to capture your best moments</p>
+<p>to make your memories lasts forever</p>
+<br>
+
+<div class="photographers">
+<h1>Our Photographers</h1>
+<img class="photographer1" src="p1.png" alt="">
+<img class="photographer2" src="p2.png" alt="">
+<br>
+</div>
+
+<div class="p1">
+  <h2>Ravindu Balasooriya</h2>
+  <h3>University of Colombo School of Computing</h3>
+</div>
+
+<div class="p2">
+  <h2>Geeth Weerasinghe</h2>
+  <h3>University of Colombo School of Computing</h3>
+</div>
+
+<h1 class="maploc">Our Location</h1>
+
+<div class="location">
+ 
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.5665505791503!2d80.26432955105221!3d7.4023657143477966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3234f45c7e0a5%3A0xa1b4067ac2fc6d66!2sRaveFX!5e0!3m2!1sen!2slk!4v1657023941385!5m2!1sen!2slk" 
+  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+  <div class="bottombar"></h3>
+    <p>© Copyright 2022 RaveFX | All Rights Reserved</p>
+    <p>Designed by <a href="https://www.linkedin.com/in/ravindu-balasooriya-b9b9b9b9/">Ravindu Balasooriya</a></p>
+    <p>Contact: <a href="mailto:ravindupbalasooriya@gmail.com">
+    <p>RaveFX Productions Pvt. Ltd. <br> Kurunegala, Sri Lanka</p>
+
+
+</body>
